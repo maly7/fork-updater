@@ -69,7 +69,7 @@ jobs:
         git fetch upstream
         git merge upstream/master
         git push
-  spring-cloud-gateway:
+  spring-cloud-consul:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
