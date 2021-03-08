@@ -21,3 +21,15 @@ jobs:
         git fetch upstream
         git merge upstream/master
         git push
+  spring-hateoas:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: maly7/spring-hateoas
+        token:  ${{ secrets.TOKEN }}
+    - run: |
+        git remote add upstreamhttps://github.com/spring-projects/spring-hateoas.git
+        git fetch upstream
+        git merge upstream/master
+        git push
