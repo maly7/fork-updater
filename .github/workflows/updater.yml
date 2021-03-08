@@ -57,6 +57,30 @@ jobs:
         git fetch upstream
         git merge upstream/master
         git push
+  spring-cloud-gateway:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: maly7/spring-cloud-gateway
+        token:  ${{ secrets.TOKEN }}
+    - run: |
+        git remote add upstream https://github.com/spring-cloud/spring-cloud-gateway.git
+        git fetch upstream
+        git merge upstream/master
+        git push
+  spring-cloud-gateway:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: maly7/spring-cloud-consul
+        token:  ${{ secrets.TOKEN }}
+    - run: |
+        git remote add upstream https://github.com/spring-cloud/spring-cloud-consul.git
+        git fetch upstream
+        git merge upstream/master
+        git push
   parrit:
     runs-on: ubuntu-latest
     steps:
