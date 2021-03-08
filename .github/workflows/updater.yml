@@ -33,3 +33,15 @@ jobs:
         git fetch upstream
         git merge upstream/master
         git push
+  spring-cloud-zookeeper:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        repository: maly7/spring-cloud-zookeeper
+        token:  ${{ secrets.TOKEN }}
+    - run: |
+        git remote add upstream https://github.com/spring-cloud/spring-cloud-zookeeper.git
+        git fetch upstream
+        git merge upstream/master
+        git push
