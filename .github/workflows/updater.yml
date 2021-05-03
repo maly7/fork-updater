@@ -19,7 +19,7 @@ jobs:
     - run: |
         git remote add upstream https://github.com/spring-projects/spring-boot.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         git push
   spring-hateoas:
     runs-on: ubuntu-latest
@@ -43,7 +43,7 @@ jobs:
     - run: |
         git remote add upstream https://github.com/spring-cloud/spring-cloud-zookeeper.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         git push
   spring-cloud-openfeign:
     runs-on: ubuntu-latest
@@ -55,7 +55,7 @@ jobs:
     - run: |
         git remote add upstream https://github.com/spring-cloud/spring-cloud-openfeign.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         git push
   spring-cloud-gateway:
     runs-on: ubuntu-latest
@@ -67,7 +67,7 @@ jobs:
     - run: |
         git remote add upstream https://github.com/spring-cloud/spring-cloud-gateway.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         git push
   spring-cloud-consul:
     runs-on: ubuntu-latest
@@ -79,7 +79,7 @@ jobs:
     - run: |
         git remote add upstream https://github.com/spring-cloud/spring-cloud-consul.git
         git fetch upstream
-        git merge upstream/master
+        git merge upstream/main
         git push
   feign:
     runs-on: ubuntu-latest
